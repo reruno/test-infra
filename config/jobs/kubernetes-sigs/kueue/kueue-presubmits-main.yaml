@@ -21,7 +21,7 @@ presubmits:
               - name: GO_TEST_FLAGS
                 value: "-race -count 3"
               - name: GOMAXPROCS
-                value: "4"
+                value: "7"
               - name: UNIT_SHARD_INDEX
                 value: "0"
               - name: UNIT_TOTAL_SHARDS
@@ -32,10 +32,10 @@ presubmits:
               - test
             resources:
               requests:
-                cpu: "3400m"
+                cpu: "7000m"
                 memory: "6Gi"
               limits:
-                cpu: "3400m"
+                cpu: "7000m"
                 memory: "6Gi"
     - name: pull-kueue-test-unit-shard-1-main
       cluster: eks-prow-build-cluster
@@ -58,7 +58,7 @@ presubmits:
               - name: GO_TEST_FLAGS
                 value: "-race -count 3"
               - name: GOMAXPROCS
-                value: "4"
+                value: "7"
               - name: UNIT_SHARD_INDEX
                 value: "1"
               - name: UNIT_TOTAL_SHARDS
@@ -69,10 +69,10 @@ presubmits:
               - test
             resources:
               requests:
-                cpu: "3400m"
+                cpu: "7000m"
                 memory: "6Gi"
               limits:
-                cpu: "3400m"
+                cpu: "7000m"
                 memory: "6Gi"
     - name: pull-kueue-test-fuzz-main
       cluster: eks-prow-build-cluster
@@ -269,13 +269,13 @@ presubmits:
               - test-multikueue-integration
             env:
               - name: GOMAXPROCS
-                value: "4"
+                value: "7"
             resources:
               requests:
-                cpu: "3800m"
+                cpu: "7000m"
                 memory: "12Gi"
               limits:
-                cpu: "3800m"
+                cpu: "7000m"
                 memory: "12Gi"
     - name: pull-kueue-test-e2e-baseline-main-1-34
       cluster: eks-prow-build-cluster
@@ -313,10 +313,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "5200m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "5200m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-extended-shard-0-main-1-34
       cluster: eks-prow-build-cluster
@@ -354,10 +354,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "4500m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "4500m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-extended-shard-1-main-1-34
       cluster: eks-prow-build-cluster
@@ -395,10 +395,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "3900m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "3900m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-extended-shard-2-main-1-34
       cluster: eks-prow-build-cluster
@@ -436,10 +436,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "4900m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "4900m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-baseline-main-1-35
       cluster: eks-prow-build-cluster
@@ -477,10 +477,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "5600m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "5600m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-extended-shard-0-main-1-35
       cluster: eks-prow-build-cluster
@@ -518,10 +518,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "5000m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "5000m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-extended-shard-1-main-1-35
       cluster: eks-prow-build-cluster
@@ -559,10 +559,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "4500m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "4500m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-extended-shard-2-main-1-35
       cluster: eks-prow-build-cluster
@@ -600,10 +600,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "5000m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "5000m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-baseline-main-1-36
       cluster: eks-prow-build-cluster
@@ -641,10 +641,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6400m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6400m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-baseline-main-1-37
       cluster: eks-prow-build-cluster
@@ -682,10 +682,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6400m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6400m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-extended-shard-0-main-1-36
       cluster: eks-prow-build-cluster
@@ -723,10 +723,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "5200m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "5200m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-extended-shard-0-main-1-37
       cluster: eks-prow-build-cluster
@@ -764,10 +764,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "5200m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "5200m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-extended-shard-1-main-1-36
       cluster: eks-prow-build-cluster
@@ -887,10 +887,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6600m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6600m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-extended-shard-2-main-1-37
       cluster: eks-prow-build-cluster
@@ -928,10 +928,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6600m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6600m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-multikueue-baseline-main
       cluster: eks-prow-build-cluster
@@ -967,10 +967,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "3100m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "3100m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-multikueue-extended-shard-0-main
       cluster: eks-prow-build-cluster
@@ -1006,10 +1006,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6600m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6600m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-multikueue-extended-shard-1-main
       cluster: eks-prow-build-cluster
@@ -1045,10 +1045,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6700m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6700m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-multikueue-extended-ray-autoscaling-main
       cluster: eks-prow-build-cluster
@@ -1085,10 +1085,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6700m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6700m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-multikueue-sequential-shard-0-main
       cluster: eks-prow-build-cluster
@@ -1202,10 +1202,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6000m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6000m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-tas-extended-shard-0-main
       cluster: eks-prow-build-cluster
@@ -1241,10 +1241,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "4100m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "4100m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-tas-extended-shard-1-main
       cluster: eks-prow-build-cluster
@@ -1280,10 +1280,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6500m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6500m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-tas-was-baseline-main
       cluster: eks-prow-build-cluster
@@ -1319,10 +1319,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6000m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6000m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-tas-was-extended-shard-0-main
       cluster: eks-prow-build-cluster
@@ -1358,10 +1358,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "4100m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "4100m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-tas-was-extended-shard-1-main
       cluster: eks-prow-build-cluster
@@ -1397,10 +1397,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6500m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6500m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-sequential-baseline-shard-0-main
       cluster: eks-prow-build-cluster
@@ -1515,10 +1515,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "4500m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "4500m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-sequential-extended-shard-1-main
       cluster: eks-prow-build-cluster
@@ -1554,10 +1554,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "5200m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "5200m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-certmanager-main
       cluster: eks-prow-build-cluster
@@ -1593,10 +1593,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "3500m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "3500m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-dra-baseline-main
       cluster: eks-prow-build-cluster
@@ -1632,10 +1632,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "3900m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "3900m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-multikueue-dra-main
       cluster: eks-prow-build-cluster
@@ -1671,10 +1671,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "6600m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "6600m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-dra-counter-main
       cluster: eks-prow-build-cluster
@@ -1710,10 +1710,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "3300m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "3300m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-dra-capacity-main
       cluster: eks-prow-build-cluster
@@ -1749,10 +1749,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "3300m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "3300m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-test-e2e-kueueviz-main
       cluster: eks-prow-build-cluster
@@ -1788,10 +1788,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "3700m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "3700m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-verify-main
       cluster: eks-prow-build-cluster
@@ -1824,10 +1824,10 @@ presubmits:
                 value: "7"
             resources:
               requests:
-                cpu: "6300m"
+                cpu: "7000m"
                 memory: "8Gi"
               limits:
-                cpu: "6300m"
+                cpu: "7000m"
                 memory: "8Gi"
     - name: pull-kueue-build-image-main
       cluster: eks-prow-build-cluster
@@ -1861,15 +1861,15 @@ presubmits:
               - kueue-priority-booster-image
             env:
               - name: GOMAXPROCS
-                value: "5"
+                value: "7"
               - name: BASE_BUILDER_IMAGE
                 value: public.ecr.aws/docker/library/golang
             resources:
               requests:
-                cpu: "4700m"
+                cpu: "7000m"
                 memory: "6Gi"
               limits:
-                cpu: "4700m"
+                cpu: "7000m"
                 memory: "6Gi"
     - name: pull-kueue-test-scheduling-perf-main
       cluster: eks-prow-build-cluster
@@ -2066,10 +2066,10 @@ presubmits:
               privileged: true
             resources:
               requests:
-                cpu: "3700m"
+                cpu: "7000m"
                 memory: "10Gi"
               limits:
-                cpu: "3700m"
+                cpu: "7000m"
                 memory: "10Gi"
     - name: pull-kueue-priority-booster-test-unit-main
       cluster: eks-prow-build-cluster
@@ -2092,17 +2092,17 @@ presubmits:
               - name: GO_TEST_FLAGS
                 value: "-race -count 3"
               - name: GOMAXPROCS
-                value: "1"
+                value: "7"
             command:
               - make
             args:
               - kueue-priority-booster-test
             resources:
               requests:
-                cpu: "400m"
+                cpu: "7000m"
                 memory: "6Gi"
               limits:
-                cpu: "400m"
+                cpu: "7000m"
                 memory: "6Gi"
     - name: pull-kueue-priority-booster-test-integration-main
       cluster: eks-prow-build-cluster

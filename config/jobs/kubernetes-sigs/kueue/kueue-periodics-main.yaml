@@ -28,7 +28,7 @@ periodics:
             - name: GO_TEST_FLAGS
               value: "-race -count 3"
             - name: GOMAXPROCS
-              value: "4"
+              value: "7"
             - name: UNIT_SHARD_INDEX
               value: "0"
             - name: UNIT_TOTAL_SHARDS
@@ -39,10 +39,10 @@ periodics:
             - test
           resources:
             requests:
-              cpu: "3400m"
+              cpu: "7000m"
               memory: "6Gi"
             limits:
-              cpu: "3400m"
+              cpu: "7000m"
               memory: "6Gi"
   - interval: 12h
     name: periodic-kueue-test-unit-shard-1-main
@@ -73,7 +73,7 @@ periodics:
             - name: GO_TEST_FLAGS
               value: "-race -count 3"
             - name: GOMAXPROCS
-              value: "4"
+              value: "7"
             - name: UNIT_SHARD_INDEX
               value: "1"
             - name: UNIT_TOTAL_SHARDS
@@ -84,10 +84,10 @@ periodics:
             - test
           resources:
             requests:
-              cpu: "3400m"
+              cpu: "7000m"
               memory: "6Gi"
             limits:
-              cpu: "3400m"
+              cpu: "7000m"
               memory: "6Gi"
   - interval: 24h
     name: periodic-kueue-test-fuzz-main
@@ -289,10 +289,10 @@ periodics:
               value: "4"
           resources:
             requests:
-              cpu: "3500m"
+              cpu: "7000m"
               memory: "14Gi"
             limits:
-              cpu: "3500m"
+              cpu: "7000m"
               memory: "14Gi"
   - interval: 12h
     name: periodic-kueue-test-integration-shard-3-main
@@ -332,10 +332,10 @@ periodics:
               value: "4"
           resources:
             requests:
-              cpu: "3500m"
+              cpu: "7000m"
               memory: "14Gi"
             limits:
-              cpu: "3500m"
+              cpu: "7000m"
               memory: "14Gi"
   - interval: 12h
     name: periodic-kueue-test-integration-multikueue-main
@@ -368,13 +368,13 @@ periodics:
             - test-multikueue-integration
           env:
             - name: GOMAXPROCS
-              value: "4"
+              value: "7"
           resources:
             requests:
-              cpu: "2500m"
+              cpu: "7000m"
               memory: "12Gi"
             limits:
-              cpu: "2500m"
+              cpu: "7000m"
               memory: "12Gi"
   - interval: 12h
     name: periodic-kueue-test-scheduling-perf-main
@@ -573,10 +573,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3800m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3800m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-0-main-1-34
@@ -620,10 +620,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3400m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3400m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-1-main-1-34
@@ -667,10 +667,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3800m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3800m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-2-main-1-34
@@ -714,10 +714,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3400m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3400m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-baseline-main-1-35
@@ -761,10 +761,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3800m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3800m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-0-main-1-35
@@ -808,10 +808,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3400m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3400m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-1-main-1-35
@@ -855,10 +855,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3700m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3700m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-2-main-1-35
@@ -902,10 +902,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3500m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3500m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-baseline-main-1-36
@@ -949,10 +949,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4200m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4200m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-0-main-1-36
@@ -996,10 +996,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4900m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4900m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-1-main-1-36
@@ -1043,10 +1043,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "5100m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "5100m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-2-main-1-36
@@ -1090,10 +1090,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4900m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4900m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-baseline-main-1-37
@@ -1137,10 +1137,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4200m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4200m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-0-main-1-37
@@ -1184,10 +1184,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4900m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4900m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-1-main-1-37
@@ -1231,10 +1231,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "5100m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "5100m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-extended-shard-2-main-1-37
@@ -1278,10 +1278,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4900m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4900m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-multikueue-baseline-main
@@ -1323,10 +1323,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3100m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3100m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-multikueue-extended-shard-0-main
@@ -1368,10 +1368,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4900m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4900m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-multikueue-extended-ray-autoscaling-main
@@ -1411,10 +1411,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "6700m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "6700m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-multikueue-extended-shard-1-main
@@ -1456,10 +1456,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4200m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4200m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-multikueue-sequential-shard-0-main
@@ -1591,10 +1591,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4000m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4000m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-tas-extended-shard-0-main
@@ -1636,10 +1636,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3700m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3700m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-tas-extended-shard-1-main
@@ -1681,10 +1681,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4800m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4800m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-tas-was-baseline-main
@@ -1726,10 +1726,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4000m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4000m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-tas-was-extended-shard-0-main
@@ -1771,10 +1771,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3700m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3700m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-tas-was-extended-shard-1-main
@@ -1816,10 +1816,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4800m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4800m"
+              cpu: "7000m"
               memory: "10Gi"
 
   - interval: 12h
@@ -1952,10 +1952,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3200m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3200m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-sequential-extended-shard-1-main
@@ -1997,10 +1997,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3100m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3100m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-certmanager-main
@@ -2042,10 +2042,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3700m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3700m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-dra-baseline-main
@@ -2087,10 +2087,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4100m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4100m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-multikueue-dra-main
@@ -2132,10 +2132,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "5000m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "5000m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-dra-counter-main
@@ -2177,10 +2177,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4000m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4000m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-dra-capacity-main
@@ -2222,10 +2222,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "4000m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "4000m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 12h
     name: periodic-kueue-test-e2e-k8s-main-was
@@ -2310,10 +2310,10 @@ periodics:
             privileged: true
           resources:
             requests:
-              cpu: "3600m"
+              cpu: "7000m"
               memory: "10Gi"
             limits:
-              cpu: "3600m"
+              cpu: "7000m"
               memory: "10Gi"
   - interval: 24h
     name: periodic-kueue-verify-ci-build-times-main
